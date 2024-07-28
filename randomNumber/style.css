@@ -1,79 +1,112 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-.body{
+  }
+  .body {
     background-color: gray;
     height: 100vh;
     width: 100vw;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-#result{
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    height: 10vh;
-    width: 30vw;
-    border: 2px solid black;
-    border-radius: 14px;
-    color: whitesmoke;
-    font-size: large;
-}
-h2{
-    position: absolute;
-    top: 33%;
-    left: 43%;
-    text-decoration: underline; 
-    border: 3px solid black;
-    padding: 5px 10px;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.option{
-    position: absolute;
-    top: 45%;
-    left: 35%;
+  }
+  main {
+    border: 1px solid rgb(76, 76, 76);
+    height: 55vh;
+    width: 40vw;
     display: flex;
-    width: 30vw;
-    justify-content: space-around;
-}
-.btn{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #resultDisplay {
+    border: 2px solid black;
+    height: 15vh;
+    width: 32vw;
+    border-radius: 12px;
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    box-shadow: 0px 0px 10px white;
+  }
+  .btn {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 0px black;
-    width: 100px;
-    height: 50px;
-}
-.btn:hover{
-    border: 2px solid black;
-}
-.btns{
+    width: 28%;
+    height: 45px;
+  }
+  .option {
     position: absolute;
-    top: 52%;
-    left: 40% ;
-    margin-top: 20px;
+    bottom: 34%;
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+  }
+  .Start-Reset {
     width: 20vw;
     display: flex;
     justify-content: space-around;
-}
-#Start{
+    position: absolute;
+    bottom: 15%;
+  }
+  #Start {
     background-color: rgb(13, 173, 13);
     color: white;
     font-size: 18px;
     font-weight: 400;
-}
-#Reset{
-    background-color:red;
+  }
+  #Reset {
+    background-color: red;
     color: white;
     font-size: 18px;
     font-weight: 400;
-}
-p{
-    position: absolute;
-    top: 65%;
-    left: 46%;
-}
+  }
+  
+  @media screen and (min-width: 290px) and (max-width: 500px) {
+    main {
+      height: 90vh;
+      width: 95vw;
+    }
+    #resultDisplay {
+      height: 20vh;
+      width: 60vw;
+      font-size: 20px;
+    }
+    .option {
+      width: 60vw;
+    }
+    .Start-Reset {
+      width: 60vw;
+    }
+    #Start {
+      font-size: small;
+    }
+    #Reset {
+      font-size: small;
+    }
+  }
+  @media screen and (min-width: 499px) and (max-width: 890px) {
+    main {
+      height: 60vh;
+      width: 60vw;
+    }
+    #resultDisplay {
+      height: 15vh;
+      width: 32vw;
+    }
+    .btn {
+      width: 30%;
+      height: 50px;
+    }
+    .option {
+      width: 40vw;
+    }
+    .Start-Reset {
+      width: 30vw;
+    }
+  }
+  
